@@ -14,14 +14,17 @@ class Song
     @@artists << artist
   end
   
+  # return count of songs
   def self.count 
     @@count 
   end 
   
+  # return array of unique genres
   def self.genres 
     @@genres.uniq
   end 
   
+  #return array of unique artists  
   def self.artists
     @@artists.uniq
   end
@@ -35,6 +38,7 @@ class Song
         genre_hash[genre] = 1
       end
     end
+    # return genre_hash
     genre_hash
   end
   
